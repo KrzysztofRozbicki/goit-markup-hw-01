@@ -6,21 +6,26 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <meta name="Webstudio" content="Efektywne rozwiązania dla biznesu" />
-    <title>Praca domowa nr 1 GOIT FullStack Developer Krzysztof Rozbicki</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WebStudio, czyli efektywne rozwiązania dla biznesu"
+    />
+    <title>WebStudio - lider rozwiązań IT</title>
   </head>
   <body>
     <!--«B5» Znaczniki HTML zawierają tagi do podkreślania głównej struktury strony: <header>, <main> i <footer>.-->
     <header>
       <!--«B6» Logo w <header> i stopce to link z tekstem, a nie obraz.-->
-      <h3>WebStudio</h3>
+      <a href="/">WebStudio</a>
       <!--«B7» Tag <nav> został użyty raz na stronie - w <header>.-->
       <nav>
         <!-- «B15» Grupy elementów tego samego typu są gromadzone na listach <ul>.-->
         <ul>
-          <li><span>Agencja</span></li>
-          <li><span>Portfolio</span></li>
-          <li><span>Kontakt</span></li>
+          <li><a href="#">Agencja</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
       <!-- «B8» Kontakty w <header> (poczta i telefon) znajdują się poza tagiem <nav>.-->
@@ -33,11 +38,9 @@
         <!--«B9» Tag <h1> został użyty jeden raz na stronie-->
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <!-- «B10» Element z tekstem "Zamów usługę" - to przycisk z type="button".-->
-        <div class="buttons">
-          <button type="button" class="button">Zamów usługe</button>
-        </div>
+        <button type="button">Zamów usługe</button>
       </section>
-      <!-- «B11» Nagłówki sekcji są oznaczone tagiem <h2>.   - PYTANIE CZY nagłówek Lorem Ipsum to nagłówek sekcji czy listy (?!?)-->
+      <!-- «B11» Nagłówki sekcji są oznaczone tagiem <h2>.   - PYTANIE CZY nagłówek Lorem Ipsum to nagłówek <h3> czy zwykły paragraf <p> (?!?)-->
       <!-- B15 grupy elementów tego samego typu są gromadzone na listach <ul> -->
       <section>
         <ul>
@@ -80,7 +83,7 @@
         <ul>
           <li>
             <img
-              src="images/what_we_do_1.jpg"
+              src="images/what_we_do/what_we_do_1.jpg"
               alt="Osoba pisząca kod przed komputerem"
               width="370"
               height="294"
@@ -88,7 +91,7 @@
           </li>
           <li>
             <img
-              src="images/what_we_do_2.jpg"
+              src="images/what_we_do/what_we_do_2.jpg"
               alt="Osoba tworząca na laptopie aplikacje mobilną"
               width="370"
               height="294"
@@ -96,7 +99,7 @@
           </li>
           <li>
             <img
-              src="images/what_we_do_3.jpg"
+              src="images/what_we_do/what_we_do_3.jpg"
               alt="Pracownik wybierający na tablecie kolor z palety kolorów"
               width="370"
               height="294"
@@ -113,7 +116,7 @@
         <ul>
           <li>
             <img
-              src="images/team_1.jpg"
+              src="images/team/team_1.jpg"
               alt="Uśmiechnięty męzczyzna z brodą w okularach"
               width="270"
               height="260"
@@ -123,8 +126,8 @@
           </li>
           <li>
             <img
-              src="images/team_2.jpg"
-              alt="Uśmiechnięta kobieta w garniturze w okularach z długimi blond włosami"
+              src="images/team/team_2.jpg"
+              alt="Uśmiechnięta kobieta w okularach z długimi blond włosami"
               width="270"
               height="260"
             />
@@ -133,7 +136,7 @@
           </li>
           <li>
             <img
-              src="images/team_3.jpg"
+              src="images/team/team_3.jpg"
               alt="Uśmiechnięty mężczyzna w błękitnej koszuli"
               width="270"
               height="260"
@@ -143,7 +146,7 @@
           </li>
           <li>
             <img
-              src="images/team_4.jpg"
+              src="images/team/team_4.jpg"
               alt="Meżczyzna w okularach w czarnej koszulce"
               width="270"
               height="260"
@@ -157,13 +160,14 @@
     <!--«B5» Znaczniki HTML zawierają tagi do podkreślania głównej struktury strony: <header>, <main> i <footer>.-->
     <footer>
       <!-- «B16» Tag <address> został użyty tylko w stopce.-->
-      <h3>WebStudio</h3>
+      <p>WebStudio</p>
       <address>
-        m. Warszawa, Aleje Jerozolimskie 21 <br />
-        info@devstudio.com<br />
-        +48 111 111 111<br />
+        <ul>
+          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        </ul>
       </address>
-      Website by &reg;Krzysztof Rozbicki
     </footer>
   </body>
 </html>
