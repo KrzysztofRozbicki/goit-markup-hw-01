@@ -1,92 +1,81 @@
-<!-- DODAĆ PLIK PRETTIER!!!-->
 <!DOCTYPE html>
-<!--«B1» Znaczniki HTML strony Studio są wpisywane w pliku index.html.-->
-<!--«B2» Wykonane są znaczniki HTML wszystkich elementów układu.-->
-<!--«B3» Tagi są używane zgodnie z ich znaczeniem semantycznym.-->
-<!--«B4» HTML jest weryfikowany przez walidator bez błędów. -->
 <html lang="pl">
+  <!-- Nagłówek z tagami meta oraz tytułem i opisem-->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="WebStudio, czyli efektywne rozwiązania dla biznesu" />
     <title>WebStudio - lider rozwiązań IT</title>
+    <meta name="description" content="WebStudio, czyli efektywne rozwiązania dla biznesu" />
   </head>
   <body>
-    <!--«B5» Znaczniki HTML zawierają tagi do podkreślania głównej struktury strony: <header>, <main> i <footer>.-->
+    <!-- HEADER -->
     <header>
-      <!--«B6» Logo w <header> i stopce to link z tekstem, a nie obraz.-->
-      <a href="/">WebStudio</a>
-      <!--«B7» Tag <nav> został użyty raz na stronie - w <header>.-->
+      <!-- Logo -->
+      <a href="/"><span>Web</span><span>Studio</span></a>
+      <!-- Menu górne-->
       <nav>
-        <!-- «B15» Grupy elementów tego samego typu są gromadzone na listach <ul>.-->
         <ul>
           <li><a href="#">Agencja</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
-      <!-- «B8» Kontakty w <header> (poczta i telefon) znajdują się poza tagiem <nav>.-->
+      <!-- dane teleadresowe-->
       <a href="mailto:info@devstudio.com">info@devstudio.com</a>
       <a href="tel:+48111111111">+48 111 111 111</a>
     </header>
-    <!--«B5» Znaczniki HTML zawierają tagi do podkreślania głównej struktury strony: <header>, <main> i <footer>.-->
+    <!-- MAIN -->
     <main>
+      <!-- Sekcja - Efektywne rozwiązania z przyciskiem zamówienia usługi -->
       <section>
-        <!--«B9» Tag <h1> został użyty jeden raz na stronie-->
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <!-- «B10» Element z tekstem "Zamów usługę" - to przycisk z type="button".-->
-        <button type="button">Zamów usługe</button>
+        <input type="button" value="Zamów usługę" />
       </section>
-      <!-- «B11» Nagłówki sekcji są oznaczone tagiem <h2>.   - PYTANIE CZY nagłówek Lorem Ipsum to nagłówek <h3> czy zwykły paragraf <p> (?!?)-->
-      <!-- B15 grupy elementów tego samego typu są gromadzone na listach <ul> -->
+      <!-- Sekcja "nasze atuty" (tak podpisane na figmie) zawierająca 4 krótkie artykuły(?) -->
       <section>
         <ul>
           <li>
-            <!-- POWINNY BYĆ CHYBA DIV ze spanem i paragrafami, zamiast h3 -->
-            <div>
-              <span>LOREM IPSUM</span>
+            <article>
+              <h3>LOREM IPSUM</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
-            </div>
+            </article>
           </li>
           <li>
-            <div>
-              <span>LOREM IPSUM</span>
+            <article>
+              <h3>LOREM IPSUM</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
-            </div>
+            </article>
           </li>
           <li>
-            <div>
-              <span>LOREM IPSUM</span>
+            <article>
+              <h3>LOREM IPSUM</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
-            </div>
+            </article>
           </li>
           <li>
-            <div>
-              <span>LOREM IPSUM</span>
+            <article>
+              <h3>LOREM IPSUM</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
-            </div>
+            </article>
           </li>
         </ul>
       </section>
+      <!-- sekcja czym się zajmujemy (nagłówek i 3 zdjęcia) -->
       <section>
         <h2>Czym się zajmujemy</h2>
-        <!-- «B12» Tagi <img> mają atrybuty wymiarów, co najmniej width i height.-->
-        <!-- «B13» Tagi <img> mają atrybut alt, który jest wypełniony krótkim opisem tego, co jest pokazane na obrazku.-->
-        <!-- «B14» Obrazy wyeksportowane z układu w formacie jpg.-->
-        <!-- «B15» Grupy elementów tego samego typu są gromadzone na listach <ul>.-->
         <ul>
           <li>
             <img
@@ -111,23 +100,21 @@
           </li>
         </ul>
       </section>
+      <!-- sekcja nasz zespół-->
       <section>
         <h2>Nasz zespół</h2>
-        <!-- «B12» Tagi <img> mają atrybuty wymiarów, co najmniej width i height.-->
-        <!-- «B13» Tagi <img> mają atrybut alt, który jest wypełniony krótkim opisem tego, co jest pokazane na obrazku.-->
-        <!-- «B14» Obrazy wyeksportowane z układu w formacie jpg.-->
-        <!-- «B15» Grupy elementów tego samego typu są gromadzone na listach <ul>.-->
         <ul>
           <li>
-            <!-- TUTAJ POWINNO BYĆ FIGURE I FIGCAPTION-->
             <figure>
               <img
                 src="images/team/team_1.jpg"
                 alt="Uśmiechnięty męzczyzna z brodą w okularach"
                 width="270"
                 height="260" />
-              <figcaption>John Doe</figcaption>
-              <span>Product Designer</span>
+              <figcaption>
+                <span>John Doe</span>
+                <p>Product Designer</p>
+              </figcaption>
             </figure>
           </li>
           <li>
@@ -137,8 +124,10 @@
                 alt="Uśmiechnięta kobieta w okularach z długimi blond włosami"
                 width="270"
                 height="260" />
-              <figcaption>John Doe</figcaption>
-              <span>Product Designer</span>
+              <figcaption>
+                <span>John Doe</span>
+                <p>Product Designer</p>
+              </figcaption>
             </figure>
           </li>
           <li>
@@ -148,8 +137,10 @@
                 alt="Uśmiechnięty mężczyzna w błękitnej koszuli"
                 width="270"
                 height="260" />
-              <figcaption>John Doe</figcaption>
-              <span>Marketing</span>
+              <figcaption>
+                <span>John Doe</span>
+                <p>Marketing</p>
+              </figcaption>
             </figure>
           </li>
           <li>
@@ -159,17 +150,18 @@
                 alt="Meżczyzna w okularach w czarnej koszulce"
                 width="270"
                 height="260" />
-              <figcaption>John Doe</figcaption>
-              <span>UI Designer</span>
+              <figcaption>
+                <span>John Doe</span>
+                <p>UI Designer</p>
+              </figcaption>
             </figure>
           </li>
         </ul>
       </section>
     </main>
-    <!--«B5» Znaczniki HTML zawierają tagi do podkreślania głównej struktury strony: <header>, <main> i <footer>.-->
+    <!-- footer z adresem i danymi kontaktowymi-->
     <footer>
-      <!-- «B16» Tag <address> został użyty tylko w stopce.-->
-      <p>WebStudio</p>
+      <span>Web</span><span>Studio</span>
       <address>
         <ul>
           <li>m. Warszawa, Aleje Jerozolimskie 21</li>
